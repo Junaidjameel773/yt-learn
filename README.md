@@ -25,7 +25,7 @@ or call the API directly from your own scripts.
 
 | Feature | Description | Status |
 | --- | --- | --- |
-| Video and playlist input | Accept a video or playlist URL and resolve all video IDs | Planned |
+| Video and playlist input | Accept a video or playlist URL and resolve all video IDs | In progress |
 | Transcript fetching | Download and cache transcripts, with language selection | In progress |
 | Video summaries | Concise summary and key points per video | Planned |
 | Playlist summaries | Combined course-level summary across a whole playlist | Planned |
