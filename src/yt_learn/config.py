@@ -16,6 +16,8 @@ class Settings(BaseSettings):
     openai_api_key: str = ""
     llm_model: str | None = None
     data_dir: Path = Path("./data")
+    # JSON list in env, e.g. TRANSCRIPT_LANGUAGES='["de", "en"]'. Tried in order.
+    transcript_languages: list[str] = ["en"]
     api_url: str = "http://localhost:8000"
 
 

@@ -5,7 +5,15 @@ from pydantic import ValidationError
 
 from yt_learn.config import Settings
 
-ENV_VARS = ["LLM_PROVIDER", "GEMINI_API_KEY", "OPENAI_API_KEY", "LLM_MODEL", "DATA_DIR", "API_URL"]
+ENV_VARS = [
+    "LLM_PROVIDER",
+    "GEMINI_API_KEY",
+    "OPENAI_API_KEY",
+    "LLM_MODEL",
+    "DATA_DIR",
+    "API_URL",
+    "TRANSCRIPT_LANGUAGES",
+]
 
 
 @pytest.fixture(autouse=True)
@@ -23,6 +31,7 @@ def test_defaults() -> None:
     assert s.llm_model is None
     assert s.data_dir == Path("./data")
     assert s.api_url == "http://localhost:8000"
+    assert s.transcript_languages == ["en"]
 
 
 def test_env_overrides(monkeypatch: pytest.MonkeyPatch) -> None:

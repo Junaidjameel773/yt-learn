@@ -10,6 +10,7 @@ dependencies = [
     "fastapi>=0.115",
     "pydantic-settings>=2.4",
     "uvicorn[standard]>=0.30",
+    "youtube-transcript-api>=1.2.5",
 ]
 
 [dependency-groups]
