@@ -26,7 +26,7 @@ or call the API directly from your own scripts.
 | Feature | Description | Status |
 | --- | --- | --- |
 | Video and playlist input | Accept a video or playlist URL and resolve all video IDs | Planned |
-| Transcript fetching | Download and cache transcripts, with language selection | Planned |
+| Transcript fetching | Download and cache transcripts, with language selection | In progress |
 | Video summaries | Concise summary and key points per video | Planned |
 | Playlist summaries | Combined course-level summary across a whole playlist | Planned |
 | Quiz generation | Multiple-choice questions with answers and explanations | Planned |
@@ -79,6 +79,7 @@ All settings are read from environment variables (or a `.env` file).
 | `OPENAI_API_KEY` | OpenAI API key | (empty) |
 | `LLM_MODEL` | Optional model override for the selected provider | provider default |
 | `DATA_DIR` | Directory for cached transcripts and exports | `./data` |
+| `TRANSCRIPT_LANGUAGES` | Preferred transcript languages as a JSON list, tried in order | `["en"]` |
 | `API_URL` | Base URL the Streamlit UI uses to reach the API | `http://localhost:8000` |
 
 ## API
